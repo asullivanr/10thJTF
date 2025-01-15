@@ -1,0 +1,29 @@
+name = "10thmod"
+author = "Akira"
+prefix = "Tenthed"
+mainprefix = "z"
+
+[files]
+include = [
+    "mod.cpp",
+    "logo.paa",
+    "logo.png",
+    "meta.cpp"
+]
+
+[version]
+#path = "addons/core/script_version.hpp" # Default
+
+major = 1 # Overrides path when set
+minor = 0
+patch = 4
+build = 3 # Optional
+
+git_hash = 0 # Default: 8
+
+[hemtt.build]
+optional_mod_folders = false # Default: true
+
+[hemtt.release]
+sign = true # Default: true
+archive = false # Default: true
