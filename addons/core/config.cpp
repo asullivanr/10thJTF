@@ -2,9 +2,7 @@ class CfgPatches {
     class Tenthed_core {
         author = "Akira";
         name = "10th JTF: Core";
-        requiredAddons[] = {
-            "OPTRE_Core",
-        };
+        requiredAddons[] = {};
         weapons[] = {};
         units[] = {};
     };

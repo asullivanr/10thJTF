@@ -13,5 +13,5 @@ class CfgPatches
 };
 class Extended_PreInit_EventHandlers
 {
-	RS_Init="RS_Init_Var = [] execVM ""\z\10thMod\addons\functions\RemoveStamina\removestamina\init.sqf""";
+	RS_Init="RS_Init_Var = [] execVM ""\z\10thJTF\addons\functions\RemoveStamina\removestamina\init.sqf""";
 };
