@@ -36,21 +36,21 @@ class cfgVehicles {
 	class Bag_Base;
 	class Tenthed_Weapon_Bag_Base : Bag_Base {
 		_generalMacro = "Tenthed_Weapon_Bag_Base";
-		picture = "\OPTRE_weapons\backpacks\icons\icon_b_anprc521_ca.paa";
+		//picture = "\OPTRE_weapons\backpacks\icons\icon_b_anprc521_ca.paa";
 		scope = 0;
 		editorCategory = "Tenthed_EditorCategory_Items";
 		editorSubcategory = "Tenthed_EditorSubcategory_Objects_Backpacks";
-		model = "\OPTRE_unsc_units\army\rucksack.p3d";
+		//model = "\OPTRE_unsc_units\army\rucksack.p3d";
 		hiddenSelections[] = {
 			"camo",
 			"camo2",
 			"B_Medic",
 			"B_Radio"
 		};
-		hiddenSelectionsTextures[] = {
-			"\z\10thJTF\addons\turrets\data\TurretBackpack\soft_backpack_co.paa",
-			""
-		};
+		//hiddenSelectionsTextures[] = {
+		//	"\z\10thJTF\addons\turrets\data\TurretBackpack\soft_backpack_co.paa",
+		//	""
+		//};
 		maximumLoad = 0;
 		class assembleInfo {
 			primary = 1;
