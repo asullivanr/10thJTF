@@ -17,7 +17,12 @@ class CfgPatches {
 			"Tenthed_USP_REEBOW_3DAP_ACC9_MCB",
 			"Tenthed_USP_REEBOW_3DAP_ACC9_MCD",
 			"Tenthed_USP_REEBOW_3DAP_ACC9_MCT",
-			"Tenthed_USP_REEBOW_3DAP_ACC9_RGR"
+			"Tenthed_USP_REEBOW_3DAP_ACC9_RGR",
+			"Tenthed_USP_45L_RUCKSACK_GRN",
+			"Tenthed_USP_45L_RUCKSACK",
+			"Tenthed_USP_45L_RUCKSACK_MC",
+			"Tenthed_USP_45L_RUCKSACK_MCD",
+			"Tenthed_USP_45L_RUCKSACK_TAN"
 		};
 	};
 };
@@ -242,4 +247,90 @@ class cfgVehicles {
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio = 1;
 	};
+
+	class USP_45L_RUCKSACK_GRN;
+	class Tenthed_USP_45L_RUCKSACK_GRN : USP_45L_RUCKSACK_GRN{
+		faction = "Tenthed_UnitFact_Main";
+		editorCategory = "Tenthed_EditorCategory_Items";
+		editorSubcategory = "Tenthed_EditorSubcategory_Objects_Backpacks";
+		displayName = "[10th] Rucksack";
+
+		scope = 2;
+
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 25000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+	};
+
+	class USP_45L_RUCKSACK;
+	class Tenthed_USP_45L_RUCKSACK : USP_45L_RUCKSACK{
+		faction = "Tenthed_UnitFact_Main";
+		editorCategory = "Tenthed_EditorCategory_Items";
+		editorSubcategory = "Tenthed_EditorSubcategory_Objects_Backpacks";
+		displayName = "[10th] Rucksack";
+
+		scope = 2;
+
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 25000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+	};
+
+	class USP_45L_RUCKSACK_MC;
+	class Tenthed_USP_45L_RUCKSACK_MC : USP_45L_RUCKSACK_MC{
+		faction = "Tenthed_UnitFact_Main";
+		editorCategory = "Tenthed_EditorCategory_Items";
+		editorSubcategory = "Tenthed_EditorSubcategory_Objects_Backpacks";
+		displayName = "[10th] Rucksack";
+
+		scope = 2;
+
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 25000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+	};
+
+	class USP_45L_RUCKSACK_MCD;
+	class Tenthed_USP_45L_RUCKSACK_MCD : USP_45L_RUCKSACK_MCD{
+		faction = "Tenthed_UnitFact_Main";
+		editorCategory = "Tenthed_EditorCategory_Items";
+		editorSubcategory = "Tenthed_EditorSubcategory_Objects_Backpacks";
+		displayName = "[10th] Rucksack";
+
+		scope = 2;
+
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 25000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+	};
+
+	class USP_45L_RUCKSACK_TAN;
+	class Tenthed_USP_45L_RUCKSACK_TAN : USP_45L_RUCKSACK_TAN{
+		faction = "Tenthed_UnitFact_Main";
+		editorCategory = "Tenthed_EditorCategory_Items";
+		editorSubcategory = "Tenthed_EditorSubcategory_Objects_Backpacks";
+		displayName = "[10th] Rucksack";
+
+		scope = 2;
+
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 25000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+	};
+
 };
