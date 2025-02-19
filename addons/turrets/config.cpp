@@ -13,8 +13,7 @@ class CfgPatches {
 			"Tenthed_HMG_Turret",
 			"Tenthed_HMG_Backpack",
 			"Tenthed_Mortar_Turret",
-			"Tenthed_Mortar_Backpack",
-			"Tenthed_AU_44_Mortar"
+			"Tenthed_Mortar_Backpack"
 		};
     };
 };

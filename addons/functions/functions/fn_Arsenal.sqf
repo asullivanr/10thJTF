@@ -11049,6 +11049,11 @@ _items = [
     "Tenthed_USP_REEBOW_3DAP_ACC9_AOR1",
     "Tenthed_USP_REEBOW_3DAP_ACC9_MC",
     "Tenthed_USP_REEBOW_3DAP_ACC9_MCD",
+    "Tenthed_USP_45L_RUCKSACK_GRN",
+    "Tenthed_USP_45L_RUCKSACK",
+    "Tenthed_USP_45L_RUCKSACK_MC",
+    "Tenthed_USP_45L_RUCKSACK_MCD",
+    "Tenthed_USP_45L_RUCKSACK_TAN",
     "rhs_weap_M320",
     "SmokeShell",
     "BWA3_DM31AT_Mag",
@@ -11070,7 +11075,14 @@ _items = [
     "USP_45L_RUCKSACK",
     "FIR_pilot_vest",
     "FIR_ScorpionHMCS",
-    "FIR_JHMCS_Type2"
+    "FIR_JHMCS_Type2",
+    "Tenthed_HMG_02_F_Bag_Auto",
+    "Tenthed_HMG_Turret",
+    "Tenthed_HMG_Backpack",
+    "Tenthed_Mortar_Turret",
+    "Tenthed_Mortar_Backpack",
+    "Tenthed_HMG_static",
+    "Tenthed_mortar_82mm"
 ];
 
 private _bftarray = [];

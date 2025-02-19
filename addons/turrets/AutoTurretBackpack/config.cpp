@@ -3,7 +3,6 @@ class CfgPatches {
         author = "Akira";
         name = "10th JTF: Auto Turret";
         requiredAddons[] = {
-            "OPTRE_Core",
 			"Tenthed_core",
 			"Tenthed_turrets",
 			"A3_Data_F",
