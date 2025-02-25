@@ -1,8 +1,8 @@
-author = "10th ODST Mod Team";
-name = "10th ODST Mod";
+author = "10th JTF Mod Team";
+name = "10th JTF Mod";
 picture = "logo.png"; 
 logo = "logo.paa";
-overview = "10th ODST custom armors, weapons, vehicles and equipment mod.";
+overview = "10th JTF custom armors, weapons, vehicles and equipment mod.";
 actionName = "GitHub";
-action = "https://github.com/asullivanr/10thArmorMod";
+action = "https://github.com/10thODST/10thJTF";
 version = 1;

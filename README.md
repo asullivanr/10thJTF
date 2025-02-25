@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/10thODST/10thMod/main/logo.png" width="480">
+    <img src="https://raw.githubusercontent.com/10thODST/10thJTF/main/logo.png" width="480">
 </p>
 
 <p align="center">
