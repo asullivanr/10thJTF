@@ -42,6 +42,11 @@ class cfgWeapons {
 	};
 };
 
+// class names
+// Mortar: RHS_M252_USMC_WD - M252
+// HMG: RHS_M2StaticMG_MiniTripod_USMC_WD - M2HB (M3)
+// TOW: RHS_TOW_TriPod_USMC_WD - M41A4 TOW
+
 class cfgVehicles {
 	class All;
 	class Strategic;
