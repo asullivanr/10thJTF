@@ -4,7 +4,10 @@ class CfgPatches {
         name = "10th JTF: Supplies";
         requiredAddons[] = {};
         weapons[] = {};
-        units[] = {};
+        units[] = {
+            "Tenthed_Resupply_Weapons",
+            "Tenthed_Restricted_Arsenal"
+        };
     };
 };
 class CfgVehicles {
