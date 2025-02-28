@@ -1,7 +1,7 @@
-private["_object", "_vehicleName", "_spawnPoint", _pad1];
+private["_object", "_vehicleName", "_className", "_spawnPoint", _pad1];
 _object = _this select 0; // The object to add actions to (usually "this")
 _vehicleName = _this select 1; // Name of the teleport location
-_className = _this select 1; // Name of the teleport location
+_className = _this select 2; // Name of the teleport location
 _spawnPoint = _this select 3; // Lift marker for teleport destination
 
 // Construct the action label dynamically using the location name

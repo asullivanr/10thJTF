@@ -10,15 +10,7 @@ _vehicleIndex = _this select 2;  // Index of the vehicle to spawn in _vehicles a
 _utility = [ // Vehicle class
     "B_Truck_01_Repair_F", // 0
     "B_Truck_01_fuel_F", // 1
-    "B_Truck_01_ammo_F", // 2
-    "OPTRE_cart" // 3
-    // Add more vehicles as needed
-];
-_utility_name = [ // Vehicle Name, index # must match above
-    "Repair_F", // 0
-    "fuel_F", // 1
-    "ammo_F", // 2
-    "cart" // 3
+    "B_Truck_01_ammo_F" // 2
     // Add more vehicles as needed
 ];
 // List of vehicles to choose from
@@ -44,9 +36,9 @@ _airFastMovers = [ // 1
 ];
 // List of vehicles to choose from
 _tank = [ // 2
-    "I_APC_Wheeled_03_cannon_F", // 0
-    "LM_OPCAN_AFV102_AR_WDL", // 1
-    "I_APC_tracked_03_cannon_F", // 2
+    "rhsusf_m113d_usarmy_M240", // 0
+    "m1128_mgs_b", // 1
+    "RHS_M2A2_BUSKI", // 2
     "OPTRE_M494",
     "O_T_APC_Tracked_02_cannon_ghex_F",
     "B_T_AFV_Wheeled_01_up_cannon_F",
@@ -63,6 +55,21 @@ _car = [ // 3
     "OPTRE_M12_FAV_APC", // 0
     "OPTRE_M12_LRV" // 1
     // Add more vehicles as needed
+];
+_boat = [ // 4
+    "C_Kart_01_Blu_F", // 0
+    "C_Kart_01_Fuel_F", // 1
+    "C_Kart_01_Red_F", // 2
+    "C_Kart_01_Vrana_F" // 3
+    // Add more vehicles as needed
+];
+_cargo = [ // 4
+    "Tenthed_Restricted_Arsenal",
+    "Tenthed_Resupply_Weapons",
+    "Tenthed_Resupply_Explosives",
+    "Tenthed_Resupply_Medical",
+    "Tenthed_Resupply_Emergency",
+    "Tenthed_Resupply_Misc"
 ];
 // List of vehicles to choose from
 _fun = [ // 4
@@ -94,6 +101,12 @@ if (_vehicleIndex >= 0) then {
         };
         case "Car": { // Car
             _selectedVehicle = _car select _vehicleIndex;
+        };
+        case "Boat": { // Boat
+            _selectedVehicle = _boat select _vehicleIndex;
+        };
+        case "Cargo": { // _cargo
+            _selectedVehicle = _cargo select _vehicleIndex;
         };
         case "Fun": { // Fun
             _selectedVehicle = _fun select _vehicleIndex;
