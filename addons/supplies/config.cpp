@@ -231,11 +231,12 @@ class CfgVehicles {
             WEAP_XX(rhs_weap_M320, 15);
             WEAP_XX(BWA3_P2A1, 20);
         };
-        class TransportBackpacks {
+        // TODO: Fix backpacks into correct zone
+        /*class TransportBackpacks {
             ITEM_XX(Tenthed_M252_Backpack, 2);
             ITEM_XX(Tenthed_M2HBM3_Backpack, 4);
             ITEM_XX(Tenthed_M41A4TOW_Backpack, 4);
-        };
+        };*/
         class TransportItems {
             ITEM_XX(diw_armor_plates_main_plate, 50);
             ITEM_XX(ACE_fieldDressing, 75);
@@ -263,11 +264,12 @@ class CfgVehicles {
         };
         class TransportMagazines { };
         class TransportWeapons{ };
-        class TransportBackpacks {
+        // TODO: Fix backpacks into correct zone
+        /*class TransportBackpacks {
             ITEM_XX(Tenthed_M252_Backpack, 4);
             ITEM_XX(Tenthed_M2HBM3_Backpack, 8);
             ITEM_XX(Tenthed_M41A4TOW_Backpack, 8);
-        };
+        };*/
         class TransportItems {
             ITEM_XX(diw_armor_plates_main_plate, 60);
             ITEM_XX(ACE_IR_Strobe_Item, 60);
