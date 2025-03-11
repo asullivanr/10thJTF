@@ -30,6 +30,10 @@ class CfgEditorCategories {
     class Tenthed_EditorCategory_Items {
         displayName = "[10th] Items";
     };
+    // Category used for Items
+    class Tenthed_EditorCategory_Modules {
+        displayName = "[10th] Modules";
+    };
 };
 class CfgEditorSubcategories {
     // Eden and Zeus Categories //
