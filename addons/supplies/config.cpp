@@ -19,7 +19,7 @@ class CfgPatches {
     };
 };
 class CfgVehicles {
-    class EventHandlers;
+    //class EventHandlers; // gpt says i dont need this. i think its a lier.
 
     class CargoNet_01_box_F;
     class Tenthed_Restricted_Arsenal : CargoNet_01_box_F {
