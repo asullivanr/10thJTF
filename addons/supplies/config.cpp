@@ -35,9 +35,9 @@ class CfgVehicles {
         };
         class TransportMagazines { };
         class TransportWeapons { };
-        class TransportBackpacks { };
+        //class TransportBackpacks { };
         class TransportItems {
-            ITEM_XX(ACE_Banana, 300);
+            //ITEM_XX(ACE_Banana, 300);
         };
     };
 
@@ -98,7 +98,7 @@ class CfgVehicles {
             WEAP_XX(rhs_weap_M136, 40);
             WEAP_XX(rhs_weap_fim92, 20);
         };
-        class TransportBackpacks { };
+        //class TransportBackpacks { };
         class TransportItems { };
     };
 
@@ -112,7 +112,7 @@ class CfgVehicles {
         };
         class TransportMagazines { };
         class TransportWeapons{ };
-        class TransportBackpacks { };
+        //class TransportBackpacks { };
         class TransportItems {
             ITEM_XX(SmokeShell, 40);
             ITEM_XX(SmokeShellYellow, 20);
@@ -147,7 +147,7 @@ class CfgVehicles {
         };
         class TransportMagazines { };
         class TransportWeapons{ };
-        class TransportBackpacks { };
+        //class TransportBackpacks { };
         class TransportItems {
             ITEM_XX(ACE_fieldDressing, 100);
             ITEM_XX(ACE_packingBandage, 100);
