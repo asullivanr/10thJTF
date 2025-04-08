@@ -11084,7 +11084,9 @@ _items = [
   "f_eyepatch_olive_r_nv",
   "Tenthed_M252_Backpack",
   "Tenthed_M2HBM3_Backpack",
-  "Tenthed_M41A4TOW_Backpack"
+  "Tenthed_M41A4TOW_Backpack",
+  "ACE_Banana",
+  "immersion_pops_pop0"
 ];
 
 private _bftarray = [];
