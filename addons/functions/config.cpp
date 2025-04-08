@@ -23,13 +23,6 @@ class CfgFunctions {
             // [this, true] call Tenthed_fnc_Arsenal;
         };
 
-        class Tenthed_Server_Functions_Blacklist
-        {
-            file="z\10thJTF\addons\functions\functions";
-            class ArsenalBlacklist {};
-            // [this, true] call Tenthed_fnc_ArsenalBlacklist;
-        };
-
         class Tenthed_Server_Functions_VehicleSpawner
         {
             file="z\10thJTF\addons\functions\functions";
