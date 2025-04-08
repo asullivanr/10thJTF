@@ -56,96 +56,47 @@ class CfgVehicles {
 		};
 	};
     
-    // Vehicle Spawn Objective Module
+    // Vehicle Spawn Menu Module
     class Tenthed_Spawner_SpawnVehicleObjective: Module_F {
         scope = 2;
-        displayName = "Vehicle Spawn Object";
+        displayName = "Vehicle Spawn Menu Object";
         category = "Tenthed_UnitFact_Main";  // Make sure this is a visible category
         function = "Tenthed_Spawner_fnc_spawnVehicleObjective";
         isGlobal = 1;
         //is3DEN = 1;  // Enable in 3DEN Editor
         curatorCanAttach = 0;
-        /*
-        class Arguments {
-            class VehicleCategories {
-                displayName = "Vehicle Categories";
-                description = "Define vehicle categories and their vehicles (vehicle class and name).";
-                typeName = "ARRAY";
-                
-                // Define the categories
-                class values {
-                    class MRAP {
-                        value = "MRAP";  // A unique category identifier
-                        displayName = "MRAP Vehicles";
-                    };
-                    
-                    class Tank {
-                        value = "Tank";  // A unique category identifier
-                        displayName = "Tank Vehicles";
-                    };
-                    
-                    class Offroad {
-                        value = "Offroad";  // A unique category identifier
-                        displayName = "Offroad Vehicles";
-                    };
-                };
-            };
-        };*/
-    };
 
-    // Vehicle Spawn Position Module
-    class Tenthed_Spawner_SpawnVehicleSpawner: Module_F {
-        scope = 2;
-        displayName = "Vehicle Spawn Position";
-        category = "Tenthed_UnitFact_Main";  // Make sure this is a visible category
-        function = "Tenthed_Spawner_fnc_setSpawnPosition";
-        isGlobal = 1;
-        //is3DEN = 1;  // Enable in 3DEN Editor
-        curatorCanAttach = 0;
-        /*
-        class Arguments {
-            class SpawnPosition {
-                displayName = "Spawn Position";
-                description = "Define the spawn position for vehicles.";
-                typeName = "OBJECT";
-                class values {
-                    class Default {
-                        value = "";
-                        default = 1;
-                    };
-                };
-            };
-        };*/
-
-		class Attributes : AttributesBase
-		{
+		class Attributes : AttributesBase {
 			// Arguments shared by specific module type (have to be mentioned in order to be present):
-			class Units : Units
-			{
+			class Units : Units {
 				property = "TAG_Module_Nuke_Units";
 			};
 
 			// Module-specific arguments:
-			class Yield : Combo
-			{
+			class Yield : Combo {
 				property = "TAG_Module_Nuke_Yield";				// Unique property (use "<tag>_<moduleClass>_<attributeClass>" format to ensure that the name is unique)
-				displayName = "Nuclear weapon yield";			// Argument label
-				tooltip = "How strong will the explosion be";	// Tooltip description
-				typeName = "NUMBER";							// Value type, can be "NUMBER", "STRING" or "BOOL"
+				displayName = "Pre-Defined Spawn List";			// Argument label
+				tooltip = "Select from the list for predefined groups.";	// Tooltip description
+				typeName = "STRING";							// Value type, can be "NUMBER", "STRING" or "BOOL"
 				defaultValue = "50";							// Default attribute value. Warning: this is an expression, and its returned value will be used (50 in this case).
 
 				// Listbox items
 				class Values
 				{
-					class 50Mt	{ name = "50 megatons";	value = 50; };
-					class 100Mt	{ name = "100 megatons"; value = 100; };
+					class 50Mt	{ name = "50 megatons";	value = "50"; };
+					class 100Mt	{ name = "100 megatons"; value = "100"; };
+
+                    class list_supply	{ name = "Supply";	value = "50"; };
+                    class list_utility	{ name = "utility";	value = "50"; };
+					class list_armor	{ name = "armor"; value = "100"; };
+                    class list_helis	{ name = "Helicopters"; value = "100"; };
+                    class list_fastmovers	{ name = "Fast Movers"; value = "100"; };
 				};
 			};
 
-			class Name : Edit
-			{
-				displayName = "Name";
-				tooltip = "Name of the nuclear device";
+			class JsonValue : Edit {
+				displayName = "Import Json value";
+				tooltip = "If a value is listed here then the list above will be ignored.";
 				property = "TAG_Module_Nuke_Name";
 				// Default text for the input box:
 				defaultValue = """Tsar Bomba"""; // Because this is an expression, one must have a string within a string to return a string
@@ -155,13 +106,11 @@ class CfgVehicles {
 		};
 
         // Module description (must inherit from base class, otherwise pre-defined entities won't be available)
-        class ModuleDescription : ModuleDescription
-        {
+        class ModuleDescription : ModuleDescription {
             description = "Simply passes the synced object back to its parent module.";	// Short description, will be formatted as structured text
             sync[] = { "LocationArea_F" };				// Array of synced entities (can contain base classes)
 
-			class LocationArea_F
-			{
+			class LocationArea_F {
 				description[] = { // Multi-line descriptions are supported
 					"First line",
 					"Second line"
@@ -174,5 +123,17 @@ class CfgVehicles {
                 synced[] = { "VR_Area_01_square_1x1_yellow_F" };
             };
         };
+    };
+
+    // Vehicle Spawn Position Module
+    class Tenthed_Spawner_SpawnVehicleSpawner: Module_F {
+        scope = 2;
+        displayName = "Vehicle Spawn Position";
+        category = "Tenthed_UnitFact_Main";  // Make sure this is a visible category
+        function = "Tenthed_Spawner_fnc_setSpawnPosition";
+        isGlobal = 1;
+        //is3DEN = 1;  // Enable in 3DEN Editor
+        curatorCanAttach = 0;
+
     };
 };
