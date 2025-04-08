@@ -1,6 +1,3 @@
-./@LocalModTest/addons/*
-./@10thODST/addons/*
-
 *.pbo
 *.spp
 
@@ -21,7 +18,6 @@ texHeaders.bin
 *.swo
 *.biprivatekey
 Thumbs.db
-CHANGELOG.md
 sqfvm.exe
 ArmaScriptCompiler.exe
 *.sqfc
