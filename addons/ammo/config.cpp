@@ -9,11 +9,14 @@ class CfgPatches {
         units[] = {};
 		ammo[] = {
 			"Tenthed_SC_338_NM_Ball",
-			"Tenthed_B_127x99_Ball_Tracer_Yellow"
+			"Tenthed_B_127x99_Ball_Tracer_Yellow",
+			"Tenthed_B_127x40_NARQ_Ball"
 		};
 		magazines[] = {
 			"Tenthed_SC_200Rnd_338_Mag",
 			"Tenthed_100Rnd_127x99_mag_Tracer_Yellow",
+			"Tenthed_6Rnd_127x40_Cyl_NARQ",
+			"Tenthed_6Rnd_127x40_Cyl_NARQ_Tracer"
 		};
     };
 };
@@ -26,6 +29,15 @@ class CfgAmmo {
 	class B_127x99_Ball;
 	class Tenthed_B_127x99_Ball_Tracer_Yellow : B_127x99_Ball {
 		hit = 30;
+	};
+
+	class B_127x33_Ball;
+	class Tenthed_B_127x40_NARQ_Ball: B_127x33_Ball {
+		caliber=2;
+		hit=0.1;
+		typicalSpeed=620;
+		cartridge="FxCartridge_small";
+		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 };
 class CfgMagazines {
@@ -54,5 +66,35 @@ class CfgMagazines {
 		descriptionShort = "Rounds: 200<br/>Used in: [10th] HMG";
 		displaynameshort = "100Rnd 127x99";
 		mass = 75;
+	};
+
+	class 20Rnd_762x51_Mag;
+	class Tenthed_6Rnd_127x40_Cyl_NARQ : 20Rnd_762x51_Mag {
+		author="Akira";
+		scope=2;
+		scopeArsenal=2;
+		ammo="Tenthed_B_127x40_NARQ_Ball";
+		count=6;
+		displayname="6Rnd 12.7x40mm NARQ Cylinder";
+		displaynameshort="12.7x40mm NARQ";
+		descriptionShort="6 Round Cylinder<br/>Caliber: 12.7x40mm<br/>Tranquilizer";
+		initspeed=900;
+		mass=4;
+	};
+	class Tenthed_6Rnd_127x40_Cyl_NARQ_Tracer : Tenthed_6Rnd_127x40_Cyl_NARQ {
+		displayname="6Rnd 12.7x40mm NARQ Cylinder (Tracer)";
+		displaynameshort="12.7x40mm NARQ Tracer";
+		descriptionShort="6 Round Cylinder<br/>Caliber: 12.7x40mm<br/>Tranquilizer Tracers";
+		tracersEvery=1;
+	};
+};
+class cfgMagazineWells
+{
+	class PistolHeavy_01_45ACP{
+		Tenthed_6Rnd_127x40[]=
+		{
+			"Tenthed_6Rnd_127x40_Cyl_NARQ",
+			"Tenthed_6Rnd_127x40_Cyl_NARQ_Tracer"
+		};
 	};
 };
