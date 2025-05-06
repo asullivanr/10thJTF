@@ -2,7 +2,7 @@ class CfgPatches {
     class Tenthed_core {
         author = "Akira";
         name = "10th JTF: Core";
-        requiredAddons[] = {};
+        requiredAddons[] = {"po_main"};
         weapons[] = {};
         units[] = {};
     };
@@ -32,6 +32,7 @@ class RscStandardDisplay;
 class RscDisplayMain: RscStandardDisplay {
     class controls {
 
+        class ProjectOPFORLogo{}; // clear the project OPFOR homescreen
 
         class InfoMods: RscControlsGroupNoHScrollbars {
             class Controls;
