@@ -1,12 +1,3 @@
-/*
-    fn_spawnVehicle.sqf
-    Called by the Eden Editor module
-    Params:
-    0: OBJECT - The module logic object
-    1: ARRAY  - Array of synced objects (e.g., spawn pad and console)
-    2: BOOL   - Activation state (unused)
-*/
-
 params ["_logic", "_syncedObjects", "_activated"];
 
 // Retrieve and parse module attributes
