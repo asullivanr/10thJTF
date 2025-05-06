@@ -1,6 +1,14 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 5/6/2025
+
+### Updated
+- [Core] Added a menu to main menu with link to the discord. Mostly as a learning thing
+- [Core And Mod] Updated logo Icons in Mod and Core
+- [vehiclespawner] Added two new spawner modules for vehicles
+- [Ammo] Added test narq rounds.
+
 ## 4/7/2025
 
 ### Removed
