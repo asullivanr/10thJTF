@@ -40,7 +40,8 @@ class CfgVehicles {
 		// Description base classes (for more information see below):
 		class ModuleDescription
 		{
-            //class Anything;
+            description = "Base module description.";
+            class Anything;
 			class AnyBrain;
 		};
 	};
@@ -48,7 +49,7 @@ class CfgVehicles {
     // 
     class Tenthed_Spawner_VehicleSpawner : Module_F {
         scope = 2;
-        displayName = "Spawn Single Vehicle";
+        displayName = "Spawn Vehicle";
         category = "Tenthed_UnitFact_Main";
 
         function = "Tenthed_Spawner_fnc_spawnVehicle"; // called when module is placed
@@ -58,22 +59,18 @@ class CfgVehicles {
         isDisposable = 0;
 
         class Arguments {
-            class vehicleClassName {
-                displayName = "Vehicle Class Name";
-                description = "Class name of the vehicle to spawn.";
+            class vehicleClassNames {
+                displayName = "Vehicle Class Names";
+                description = "Comma-separated class names of vehicles to spawn.";
                 typeName = "STRING";
-                defaultValue = "RHS_M2A2_BUSKI";
+                defaultValue = "RHS_M2A2_BUSKI,rhsusf_m998_d_s_2dr_halftop";
             };
-            class vehicleDisplayName {
-                displayName = "Vehicle Display Name";
-                description = "Name shown in action menu.";
+            class vehicleDisplayNames {
+                displayName = "Vehicle Display Names";
+                description = "Comma-separated display names matching class names.";
                 typeName = "STRING";
-                defaultValue = "M2A2ODS (BUSK I)";
+                defaultValue = "M2A2ODS (BUSK I),M1123 (2D/Half/Snorkel)";
             };
-        };
-
-        class ModuleDescription {
-            description = "Spawns a vehicle when a player uses a console. Sync the spawn location(VR area yello) and a spawn console of some kind for module to function.";
         };
     };
 };
