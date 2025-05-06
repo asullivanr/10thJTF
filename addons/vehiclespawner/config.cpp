@@ -4,10 +4,11 @@ class CfgPatches {
         name = "10th JTF: vehicle spawner";
         units[] = {
             "Tenthed_Spawner_SpawnVehicleObjective",
-            "Tenthed_Spawner_SpawnVehicleSpawner"
+            "Tenthed_Spawner_SpawnVehicleSpawner",
+            "Tenthed_Spawner_VehicleSpawner"
         };
         weapons[] = {};
-        requiredAddons[] = {"A3_Modules_F"};
+        requiredAddons[] = {"A3_Modules_F","A3_Functions_F"};
     };
 };
 // https://community.bistudio.com/wiki/Modules
@@ -29,6 +30,11 @@ class CfgFunctions {
         {
             file="z\10thJTF\addons\vehiclespawner\functions";
             class spawnVehicle {};
+        };
+        class Tenthed_Func_spawnVehicleTest
+        {
+            file="z\10thJTF\addons\vehiclespawner\functions";
+            class spawnVehicleTest {};
         };
     };
 };
@@ -135,5 +141,37 @@ class CfgVehicles {
         //is3DEN = 1;  // Enable in 3DEN Editor
         curatorCanAttach = 0;
 
+    };
+
+    // test
+    class Tenthed_Spawner_VehicleSpawner : Module_F {
+        scope = 2;
+        displayName = "Spawn Vehicle Test";
+        category = "Tenthed_UnitFact_Main";
+
+        function = "Tenthed_Spawner_fnc_spawnVehicleTest"; // called when module is placed
+        functionPriority = 1;
+        isGlobal = 1;
+        isTriggerActivated = 0;
+        isDisposable = 0;
+
+        class Arguments {
+            class vehicleClassName {
+                displayName = "Vehicle Class Name";
+                description = "Class name of the vehicle to spawn.";
+                typeName = "STRING";
+                defaultValue = "RHS_M2A2_BUSKI";
+            };
+            class vehicleDisplayName {
+                displayName = "Vehicle Display Name";
+                description = "Name shown in action menu.";
+                typeName = "STRING";
+                defaultValue = "M2A2ODS (BUSK I)";
+            };
+        };
+
+        class ModuleDescription {
+            description = "Spawns a vehicle when a player uses a console.";
+        };
     };
 };
