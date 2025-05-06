@@ -7,6 +7,65 @@ class CfgPatches {
         units[] = {};
     };
 };
+class RscPicture;
+class RscControlsGroup;
+class RscPictureKeepAspect;
+
+class CfgMods {
+	class tend_mod {
+		dir="@10thJTF";
+		name="Tenthed JTF";
+		picture="A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
+		hidePicture="true";
+		hideName="true";
+		actionName="Website";
+		action="https://discord.gg/GERZ4Un";
+		description="Join the 10th JTF: https://discord.gg/GERZ4Un";
+	};
+};
+
+class RscControlsGroupNoHScrollbars;
+class RscHTML;
+class RscText;
+
+class RscStandardDisplay;
+class RscDisplayMain: RscStandardDisplay {
+    class controls {
+
+
+        class InfoMods: RscControlsGroupNoHScrollbars {
+            class Controls;
+        };
+
+        class InfoNews: InfoMods {
+            class Controls: Controls {
+                class Background;
+                class BackgroundIcon;
+                class Icon;
+                class News;
+                class Notification;
+                class Button;
+            };
+        };
+
+        class Tenthed_news_apex: InfoNews {
+            idc = 12199;
+            y = "safeZoneY + safeZoneH - (4 * 2 + 1) * (pixelH * pixelGrid * 2) - 4 * (4 * pixelH)";
+
+            class Controls: Controls {
+                class Background: Background {};
+                class BackgroundIcon: BackgroundIcon {};
+                class Icon: Icon {
+                    text = "\z\10thJTF\addons\core\data\logo.paa";
+                };
+                class Button: Button {
+                    tooltip = "Join the 10th JTF";
+                    url = "https://discord.gg/GERZ4Un";
+                };
+            };
+        };
+    };
+};
 class CfgFactionClasses {
     // Primary 10th JTF faction
     class Tenthed_UnitFact_Main {
