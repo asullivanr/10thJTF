@@ -1,4 +1,4 @@
-diag_log "Loading: 10th JTF Functions Narq Preinit";
+diag_log "[Narq] Loading: 10th JTF Functions Narq Preinit";
 
 // Safe ACE function overrides
 if (isNil {ace_common_fnc_getDeathAnim}) then {
@@ -46,8 +46,23 @@ if (isNil {ace_common_fnc_disableAI}) then {
     ";
 };
 
+CSW_fnc_dropWeapon = {
+    params ["_unit"];
+    private _weap = currentWeapon _unit;
+    if (_weap != "" && _weap != "ACE_FakePrimaryWeapon") then {
+        _unit removeWeapon _weap;
+        if (isTouchingGround _unit) then {
+            private _dir = getDir _unit;
+            private _dropPos = (ASLToAGL getPosASL _unit) vectorAdd [-cos (_dir - 25) * 1.4, sin (_dir - 25) * 1.4, 0];
+            private _holder = createVehicle ["groundweaponHolder", _dropPos, [], 0, "CAN_COLLIDE"];
+            _holder addWeaponCargoGlobal [_weap, 1];
+            _holder setDir (190 + _dir);
+        };
+    };
+};
+
 // Compile main narq functions
 CSW_fnc_NarqOnHit = compileFinal preProcessFileLineNumbers "\z\10thJTF\addons\ammo\Narq\functions\fnc_NarqOnHit.sqf";
 CSW_fnc_NarqOnRespawn = compileFinal preProcessFileLineNumbers "\z\10thJTF\addons\ammo\Narq\functions\fnc_NarqOnRespawn.sqf";
 
-diag_log "Done Loading: 10th JTF Functions Narq Preinit";
+diag_log "[Narq] Done Loading: 10th JTF Functions Narq Preinit";
