@@ -75,16 +75,16 @@ class CfgMagazines {
 		scopeArsenal=2;
 		ammo="Tenthed_B_127x40_NARQ_Ball";
 		count=6;
-		displayname="6Rnd 12.7x40mm NARQ Cylinder";
-		displaynameshort="12.7x40mm NARQ";
-		descriptionShort="6 Round Cylinder<br/>Caliber: 12.7x40mm<br/>Tranquilizer";
+		displayname="6Rnd NARQ Cylinder";
+		displaynameshort="6Rnd NARQ";
+		descriptionShort="6 Round Cylinder<br/>Tranquilizer";
 		initspeed=900;
 		mass=4;
 	};
 	class Tenthed_6Rnd_127x40_Cyl_NARQ_Tracer : Tenthed_6Rnd_127x40_Cyl_NARQ {
-		displayname="6Rnd 12.7x40mm NARQ Cylinder (Tracer)";
-		displaynameshort="12.7x40mm NARQ Tracer";
-		descriptionShort="6 Round Cylinder<br/>Caliber: 12.7x40mm<br/>Tranquilizer Tracers";
+		displayname="6Rnd NARQ Cylinder (Tracer)";
+		displaynameshort="6Rnd NARQ Tracer";
+		descriptionShort="6 Round Cylinder<br/>Tranquilizer Tracers";
 		tracersEvery=1;
 	};
 };
