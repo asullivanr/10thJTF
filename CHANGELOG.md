@@ -10,6 +10,9 @@ All notable changes to this project will be documented in this file.
 - [Ammo] Updated NARQ ammo names
 - [Ammo] Updated NARQ ammo to be more script performant
 - [Ammo] Updated NARQ ammo to factor in self hit and AI shooter detection
+- [Ammo] Added NARQ ammo to a specific weapon for testing
+- [Ammo] Fixed issue related to preprocess file line numbers
+- [Functions] Fixed issue related to a faulty name in the remove stamina script
 
 ## 4/7/2025
 
