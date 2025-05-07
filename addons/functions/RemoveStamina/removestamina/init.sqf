@@ -1,7 +1,7 @@
-waitUntil {(!isNull Player) and (alive Player)};
+waitUntil {(!isNull player) and (alive player)};
 
 while {true} do 
 {
     player enableStamina false;
-	sleep 1;
+    sleep 1;
 };
