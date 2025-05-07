@@ -38,7 +38,7 @@ private _newTime = CBA_missionTime + CSW_NARQTIME;
 _whohit setVariable ["CSW_isNarqedUntil", _newTime, true];
 
 if (_oldNarqedUntilTime >= CBA_missionTime) exitWith {
-    if (vehicle _whohit == _whohit && _oldNarqedUntilTime < _newTime - 2) then {
+    if (isNull objectParent _whohit && _oldNarqedUntilTime < _newTime - 2) then {
         [_whohit] call CSW_fnc_dropWeapon;
     };
 };
@@ -47,7 +47,8 @@ if (_oldNarqedUntilTime >= CBA_missionTime) exitWith {
 [_whohit, _shooter, _oldNarqedUntilTime] spawn {
     params ["_whohit", "_shooter", "_oldNarqedUntilTime"];
     private _wasStopped = false;
-    private _inVehicle = !(vehicle _whohit == _whohit);
+    //private _inVehicle = !(vehicle _whohit == _whohit);
+    private _inVehicle = !isNull objectParent _whohit;
 
     if (!_inVehicle) then {
         [_whohit, "AcinPercMstpSrasWrflDnon_agony"] remoteExecCall ["switchMove", 0];
@@ -99,7 +100,7 @@ if (_oldNarqedUntilTime >= CBA_missionTime) exitWith {
             [_whohit, false, 0, true] call ace_medical_fnc_setUnconscious;
         };
 
-        if (vehicle _whohit == _whohit) then {
+        if (isNull objectParent _whohit) then {
             [_whohit, "AmovPpneMstpSnonWnonDnon"] remoteExecCall ["switchMove", 0];
         } else {
             (_whohit getVariable ["CSW_WakeUpAnimVehicle", ["", objNull]]) params ["_anim", "_vehicle"];
