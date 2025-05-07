@@ -7,7 +7,9 @@ All notable changes to this project will be documented in this file.
 - [Core] Added a menu to main menu with link to the discord. Mostly as a learning thing
 - [Core And Mod] Updated logo Icons in Mod and Core
 - [vehiclespawner] Added two new spawner modules for vehicles
-- [Ammo] Added test narq rounds.
+- [Ammo] Updated NARQ ammo names
+- [Ammo] Updated NARQ ammo to be more script performant
+- [Ammo] Updated NARQ ammo to factor in self hit and AI shooter detection
 
 ## 4/7/2025
 
