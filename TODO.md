@@ -1,12 +1,16 @@
 # Change Log
-The todo list is categorized based on importance.
-
-Should an Item be completed, notate name after : and change [ ] to [x]
+The todo list is categorized based on importance. But inside each category there is no sorting of importance.
 
 ## Low
 
-- [ ] Correct backpack names : 
+- [ ] Audit paa files and see whats actually being used in mod so they can be removed..
+- [ ] Correct backpack names.
+- [ ] Remove old vehicle spawner functions because of the new module version.
+- [ ] Create scripted light module for mission creation.
 
 ## Medium
 
+- [ ] Further Narq improvements for stability and performance..
+
 ## High
+- [ ] Turn teleport script into a functioning module in editor.

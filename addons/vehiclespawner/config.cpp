@@ -12,8 +12,7 @@ class CfgPatches {
 };
 // https://community.bistudio.com/wiki/Modules
 class CfgFunctions {
-    class Tenthed_functions_spawning
-    {
+    class Tenthed_functions_spawning {
         tag = "Tenthed_Spawner";
         class Tenthed_Func_spawnVehicle {
             file="z\10thJTF\addons\vehiclespawner\functions";
