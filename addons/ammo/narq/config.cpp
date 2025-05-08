@@ -1,17 +1,14 @@
-class CfgPatches
-{
-	class Tenthed_Ammo_Narq
-	{
-		author="Akira";
+class CfgPatches {
+	class Tenthed_Ammo_Narq {
+		author = "Akira";
 		name = "10th JTF: Narq";
-		addonRootClass="Tenthed_Ammo";
-		units[]={};
-		weapons[]={};
-		magazines[]={};
-		ammo[]={};
-		requiredVersion=1;
-		requiredAddons[]=
-		{
+		addonRootClass = "Tenthed_Ammo";
+		units[] = {};
+		weapons[] = {};
+		magazines[] = {};
+		ammo[] = {};
+		requiredVersion = 1;
+		requiredAddons[] = {
 			"A3_Data_F_Decade_Loadorder",
 			"Tenthed_Ammo"
 		};
