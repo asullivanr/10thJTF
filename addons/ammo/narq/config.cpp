@@ -2,8 +2,8 @@ class CfgPatches
 {
 	class Tenthed_Ammo_Narq
 	{
-		author="Baseplate";
-		name="The Carver Findings";
+		author="Akira";
+		name = "10th JTF: Narq";
 		addonRootClass="Tenthed_Ammo";
 		units[]={};
 		weapons[]={};
