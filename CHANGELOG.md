@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 5/8/2025
+
+### Updated
+
+- [Functions] Cleared out old version sqf files for teleportation. 
+- [Functions] Created new module that allows for teleportation.
+
 ## 5/6/2025
 
 ### Updated
