@@ -9,8 +9,8 @@ private _oldActions = _object getVariable ["Tenthed_Teleport_Actions", []];
 _object setVariable ["Tenthed_Teleport_Actions", []];
 private _addedActions = [];
 
-diag_log format ["[Functions] Building teleport menu for: %1", _object];
-diag_log format ["[Functions] Current destinations: %1", Tenthed_Teleport_Locations];
+//diag_log format ["[Functions] Building teleport menu for: %1", _object];
+//diag_log format ["[Functions] Current destinations: %1", Tenthed_Teleport_Locations];
 
 // Add a new action for each destination that is not this terminal
 {
