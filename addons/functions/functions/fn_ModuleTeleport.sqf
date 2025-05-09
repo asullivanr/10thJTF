@@ -37,6 +37,7 @@ private _console = objNull;
 // Validation
 if (isNull _destination || isNull _console) exitWith {
     diag_log "[Functions] ERROR: Could not identify both destination and terminal.";
+	exitWith {};
 };
 
 // Prevent duplicate entry
