@@ -69,6 +69,7 @@ class CfgVehicles {
                 description = "Display name for the teleport destination.";
                 typeName = "STRING";
                 defaultValue = "Forward Base";
+                property = "locationName";
             };
         };
 
