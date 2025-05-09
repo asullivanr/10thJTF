@@ -13,4 +13,4 @@ The todo list is categorized based on importance. But inside each category there
 - [ ] Further Narq improvements for stability and performance..
 
 ## High
-- [ ] Turn teleport script into a functioning module in editor.
+- [x] Turn teleport script into a functioning module in editor.
