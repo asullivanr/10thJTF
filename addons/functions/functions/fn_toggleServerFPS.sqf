@@ -1,6 +1,7 @@
-/*if (!serverCommandAvailable "#ban") exitWith {
-    hint "You must be an admin to use this.";
-};*/
+if (!([] call Tenthed_fnc_isAuthorizedPlayer)) exitWith {
+    hint "You must be a logged-in admin or on the allowed list to use this function.";
+};
+
 
 Tenthed_var_showServerFPS = !Tenthed_var_showServerFPS;
 
