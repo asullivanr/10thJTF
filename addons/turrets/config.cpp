@@ -125,6 +125,22 @@ class cfgVehicles {
 			dissasembleTo[] = { "Tenthed_M252_Backpack" };
 			displayName = "";
 		};
+		/* need to figure out if i can get away with just this, also need to get the class names for whichever ammo it uses
+		class Turrets : Turrets {
+			class MainTurret : MainTurret {
+				magazines[] =
+				{
+					"8Rnd_82mm_Mo_shells",
+					"8Rnd_82mm_Mo_shells",
+					"8Rnd_82mm_Mo_shells",
+					"8Rnd_82mm_Mo_shells",
+					"8Rnd_82mm_Mo_Flare_white",
+					"8Rnd_82mm_Mo_Smoke_white"
+				};
+			};
+		};
+		*/
+
 	};
 	// HMG
 	class RHS_M2StaticMG_MiniTripod_USMC_WD;
