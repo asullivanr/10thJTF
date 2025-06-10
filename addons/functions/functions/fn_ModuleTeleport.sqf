@@ -7,14 +7,25 @@ params ["_logic", "_syncedObjects", "_args"];
 private _locationName = "Forward Base";
 
 // Try to fetch the custom location name directly from the module
-private _customName = _logic getVariable ["locationName", ""];
+/* private _customName = _logic getVariable ["locationName", ""];
 if (_customName isEqualType "" && {_customName != ""}) then {
     _locationName = _customName;
 } else {
     diag_log "[Functions] Warning: Module 'locationName' variable not found.";
 	exitWith {};
 };
+ */
+{
+    private _customName = _logic getVariable ["locationName", ""];
+    if (!(_customName isEqualType "" && {_customName != ""})) exitWith {
+        diag_log "[Functions] Warning: Module 'locationName' variable not found.";
+    };
 
+    private _locationName = _customName;
+
+    // rest of your script goes here
+
+} call {};
 //diag_log format ["[Functions] Teleport module location name: %1", _locationName];
 
 // Initialize global registries if not already
@@ -37,7 +48,7 @@ private _console = objNull;
 // Validation
 if (isNull _destination || isNull _console) exitWith {
     diag_log "[Functions] ERROR: Could not identify both destination and terminal.";
-	exitWith {};
+	//exitWith {};
 };
 
 // Prevent duplicate entry
