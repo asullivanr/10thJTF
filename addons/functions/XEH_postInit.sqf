@@ -1,4 +1,4 @@
-
+//#include "z\10thJTF\addons\functions\defineDIKCodes.inc"
 #define DIK_SEMICOLON 0x27
 
 Tenthed_var_showServerFPS = false;
@@ -20,7 +20,7 @@ Tenthed_var_showServerFPS = false;
 };*/
 
 
-["10th JTF Mod", "ToggleServerFPSDisplay", ["Toggle Server FPS Display", "Show/hide server FPS counter (admin only)"], {
+["10th JTF Mod", "ToggleServerFPSDisplay", ["Toggle Server FPS Display", "Show/hide server FPS counter (admin or on list only)"], {
     [] call Tenthed_fnc_toggleServerFPS
 }, {
     //[] call Tenthed_fnc_toggleServerFPS
