@@ -58,6 +58,7 @@ class CfgFunctions {
         };
         class serverFPS {
             file = "z\10thJTF\addons\functions\functions";
+            class isAuthorizedPlayer {};
             class toggleServerFPS {};
         };
     };
