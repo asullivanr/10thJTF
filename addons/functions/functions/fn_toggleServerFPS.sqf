@@ -2,7 +2,6 @@ if (!([] call Tenthed_fnc_isAuthorizedPlayer)) exitWith {
     hint "You must be a logged-in admin or on the allowed list to use this function.";
 };
 
-
 Tenthed_var_showServerFPS = !Tenthed_var_showServerFPS;
 
 if (Tenthed_var_showServerFPS) then {
@@ -19,7 +18,8 @@ if (Tenthed_var_showServerFPS) then {
 
                     if (!isNil "serverFPS") then {
                         private _fps = serverFPS;
-                        _fpsText = str _fps;
+                        //_fpsText = str _fps;
+                        _fpsText = str (round _fps); // rounded
 
                         _color = switch (true) do {
                             case (_fps > 40): { "#00FF00" };         // Green
