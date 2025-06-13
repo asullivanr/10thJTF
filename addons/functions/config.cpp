@@ -3,10 +3,39 @@ class CfgPatches {
         author = "Akira";
         name = "10th JTF: Functions";
         requiredAddons[] = {
-            "Tenthed_core"
+            "Tenthed_core",
+            "cba_main"
         };
         weapons[] = {};
         units[] = {};
+    };
+};
+class RscTitles {
+    class Tenthed_RscServerFPS {
+        idd = -1;
+        duration = 1e10;
+        movingEnable = 0;
+        onLoad = "uiNamespace setVariable ['Tenthed_RscServerFPS_display', _this select 0]";
+        onUnload = "uiNamespace setVariable ['Tenthed_RscServerFPS_display', displayNull]";
+        fadein = 0;
+        fadeout = 0;
+
+        class controls {
+            class ServerFPS_Text {
+                idc = 1000;
+                type = 13;
+                style = 0;
+                x = safeZoneX + 0.01;
+                y = safeZoneY + 0.01;
+                w = 0.25;
+                h = 0.08;
+                size = 0.035;
+                colorBackground[] = {0,0,0,0.3};
+                colorText[] = {1,1,1,1};
+                font = "PuristaMedium";
+                text = "";
+            };
+        };
     };
 };
 class CfgFunctions {
@@ -26,6 +55,11 @@ class CfgFunctions {
             file = "z\10thJTF\addons\functions\functions";
             class AddTeleportMenu {};
             class ModuleTeleport {};
+        };
+        class serverFPS {
+            file = "z\10thJTF\addons\functions\functions";
+            class isAuthorizedPlayer {};
+            class toggleServerFPS {};
         };
     };
 };
@@ -82,5 +116,10 @@ class CfgVehicles {
                 direction = 1;
             };
         };
+    };
+};
+class Extended_PostInit_EventHandlers {
+    class Tenthed_ServerFPSDisplay {
+        init = "call compile preprocessFileLineNumbers 'z\10thJTF\addons\functions\XEH_postInit.sqf'";
     };
 };
