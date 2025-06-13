@@ -11088,7 +11088,8 @@ _items = [
   "ACE_Banana",
   "immersion_pops_pop0",
   "Tenthed_6Rnd_127x40_Cyl_NARQ",
-  "Tenthed_6Rnd_127x40_Cyl_NARQ_Tracer"
+  "Tenthed_6Rnd_127x40_Cyl_NARQ_Tracer",
+  "Rev_darter"
 ];
 
 private _bftarray = [];
