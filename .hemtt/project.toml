@@ -8,7 +8,8 @@ include = [
     "mod.cpp",
     "logo.paa",
     "logo.png",
-    "meta.cpp"
+    "meta.cpp",
+    "CHANGELOG.md"
 ]
 
 [version]
@@ -20,6 +21,9 @@ patch = 4
 build = 3 # Optional
 
 git_hash = 0 # Default: 8
+
+[hemtt.build]
+optional_mod_folders = false # Default: true
 
 [hemtt.build]
 optional_mod_folders = false # Default: true
