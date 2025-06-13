@@ -1,6 +1,15 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 5/13/2025
+
+### Updated
+- [Functions] Added missing Darter drone to arsenal
+
+### Added
+
+- [Functions] Server side script to check for logged in admin or by UID to display server FPS in a menu
+
 ## 5/8/2025
 
 ### Updated
