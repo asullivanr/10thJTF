@@ -22,7 +22,7 @@ build = 3 # Optional
 
 git_hash = 0 # Default: 8
 
-[hemtt.build]
+[hemtt.dev]
 optional_mod_folders = false # Default: true
 
 [hemtt.build]
