@@ -2,7 +2,7 @@ class CfgPatches {
     class Tenthed_core {
         author = "Akira";
         name = "10th JTF: Core";
-        requiredAddons[] = {"po_main"};
+        requiredAddons[] = {};
         weapons[] = {};
         units[] = {};
     };
@@ -29,6 +29,7 @@ class RscHTML;
 class RscText;
 
 class RscStandardDisplay;
+/*
 class RscDisplayMain: RscStandardDisplay {
     class controls {
 
@@ -66,7 +67,7 @@ class RscDisplayMain: RscStandardDisplay {
             };
         };
     };
-};
+};*/
 class CfgFactionClasses {
     // Primary 10th JTF faction
     class Tenthed_UnitFact_Main {
