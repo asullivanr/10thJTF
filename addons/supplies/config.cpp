@@ -19,7 +19,7 @@ class CfgPatches {
     };
 };
 class CfgVehicles {
-    //class EventHandlers; // gpt says i dont need this. i think its a lier.
+    //class EventHandlers;
 
     class CargoNet_01_box_F;
     class Tenthed_Restricted_Arsenal : CargoNet_01_box_F {
@@ -129,10 +129,10 @@ class CfgVehicles {
             ITEM_XX(ACE_HandFlare_Green, 10);
             ITEM_XX(ACE_HandFlare_Yellow, 10);
             ITEM_XX(rhsusf_m112_mag, 40);
-            ITEM_XX(tsp_breach_block_mag, 30);
-            ITEM_XX(tsp_breach_package_mag, 15);
-            ITEM_XX(tsp_breach_popper_mag, 60);
-            ITEM_XX(tsp_breach_stick_mag, 15);
+            //ITEM_XX(tsp_breach_block_mag, 30);
+            //ITEM_XX(tsp_breach_package_mag, 15);
+            //ITEM_XX(tsp_breach_popper_mag, 60);
+            //ITEM_XX(tsp_breach_stick_mag, 15);
             ITEM_XX(SatchelCharge_Remote_Mag, 10);
         };
     };
@@ -217,10 +217,10 @@ class CfgVehicles {
             MAG_XX(BWA3_1Rnd_Flare_Multistar_Green, 20);
             MAG_XX(BWA3_1Rnd_Flare_Multistar_Red, 20);
             MAG_XX(rhs_mag_an_m14_th3, 20);
-            MAG_XX(tsp_breach_block_mag, 30);
-            MAG_XX(tsp_breach_package_mag, 10);
-            MAG_XX(tsp_breach_popper_mag, 40);
-            MAG_XX(tsp_breach_stick_mag, 15);
+            //MAG_XX(tsp_breach_block_mag, 30);
+            //MAG_XX(tsp_breach_package_mag, 10);
+            //MAG_XX(tsp_breach_popper_mag, 40);
+            //MAG_XX(tsp_breach_stick_mag, 15);
         };
         class TransportWeapons{
             WEAP_XX(hlc_wp_M4_TacReload, 30);
@@ -271,13 +271,13 @@ class CfgVehicles {
             ITEM_XX(Tenthed_M41A4TOW_Backpack, 8);
         };*/
         class TransportItems {
-            ITEM_XX(diw_armor_plates_main_plate, 60);
+            //ITEM_XX(diw_armor_plates_main_plate, 60);
             ITEM_XX(ACE_IR_Strobe_Item, 60);
             ITEM_XX(ACE_CableTie, 60);
-            ITEM_XX(CBRN_gasmaskFilter, 60);
-            ITEM_XX(CBRN_sealant, 100);
-            ITEM_XX(CBRN_DuctTape, 80);
-            ITEM_XX(G_CBRN_A, 30);
+            //ITEM_XX(CBRN_gasmaskFilter, 60);
+            //ITEM_XX(CBRN_sealant, 100);
+            //ITEM_XX(CBRN_DuctTape, 80);
+            //ITEM_XX(G_CBRN_A, 30);
         };
     };
 };
