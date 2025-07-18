@@ -9359,14 +9359,14 @@ _items = [
   "rhsusf_ANPVS_15",
   "rhsusf_ANPVS_14",
   "ACE_RangeTable_82mm",
-  "PHEN_FSPLUS_ChemGrenade_RiotCSGasGrenade",
+  //"PHEN_FSPLUS_ChemGrenade_RiotCSGasGrenade",
   "ChemicalDetector_01_watch_F",
   "ChemicalDetector_01_black_F",
   "ChemicalDetector_01_olive_F",
   "ChemicalDetector_01_tan_F",
-  "PHEN_FSPLUS_ChemGrenade_RiotCSGasGrenade_40mm",
-  "PHEN_FSPLUS_ChemGrenade_RiotCSGasGrenade_40mm_3GL",
-  "tsp_breach_package_mag",
+  //"PHEN_FSPLUS_ChemGrenade_RiotCSGasGrenade_40mm",
+  //"PHEN_FSPLUS_ChemGrenade_RiotCSGasGrenade_40mm_3GL",
+  //"tsp_breach_package_mag",
   "USP_BEARD_BLD",
   "USP_BEARD_BLD2",
   "USP_BEARD_BLD3",
@@ -11089,7 +11089,48 @@ _items = [
   "immersion_pops_pop0",
   "Tenthed_6Rnd_127x40_Cyl_NARQ",
   "Tenthed_6Rnd_127x40_Cyl_NARQ_Tracer",
-  "Rev_darter"
+  "Rev_darter",
+
+  // Air Additions
+  // Uniform CWU-27
+  "CWU27P_Base",
+  "CWU27PTan_Base_NG",
+  "CWU27P_Base_NG",
+  "CWU27PTan_Base_Rolled",
+  "CWU27P_Base_Rolled",
+  "CWU27PTan_Base",
+  // Uniform CSU-13
+  "CSU13BP_Base",
+  "CSU13BPTan_Base_NG",
+  "CSU13BP_Base_NG",
+  "CSU13BPTan_Base_Rolled",
+  "CSU13BP_Base_Rolled",
+  "CSU13BPTan_Base",
+  // Vests
+  "CMU33P",
+  "CMU33PTan",
+  "SRU21P_LPU9P_PCU15AP",
+  "SRU21P_LPU9P_PCU15AP_Alt",
+  "SRU21P_LPU9P",
+  "SRU21P_LPU9P_Alt",
+  "SRU21P",
+  "SRU21P_Alt",
+  "SV2B_LPU23P",
+  "SV2B_LPU36P",
+  // Helmets JHMCS
+  "JHMCS_MBU12P",
+  "JHMCS_MBU14P",
+  "JHMCS_MBU20P",
+  "JHMCS_MBU23P",
+  "JHMCS2_MBU12P",
+  "JHMCS2_MBU12P_Night",
+  "JHMCS2_MBU20P",
+  "JHMCS2_MBU20P_Night",
+  // Helmets MBU-23/P
+  "HGU68P_MBU23P_Amber",
+  "HGU68P_MBU23P_Clear",
+  "HGU68P_MBU23P_Tinted",
+  "JHMCS_MBU23P"
 ];
 
 private _bftarray = [];
