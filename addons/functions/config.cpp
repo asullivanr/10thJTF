@@ -10,6 +10,11 @@ class CfgPatches {
         units[] = {};
     };
 };
+class CfgSurfaces {
+	class Default {
+		AIAvoidStance = 2;
+	};
+};
 class RscTitles {
     class Tenthed_RscServerFPS {
         idd = -1;
