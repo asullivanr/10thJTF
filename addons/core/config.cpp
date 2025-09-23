@@ -161,11 +161,9 @@ class ACEX_Fortify_Presets {
 
 class CfgWeapons {
     class Uniform_Base;
-    class Uniform_Base
-    {
-        class ItemInfo
-        {
-            uniformType = "Neopren"; // Force wetsuit behaviour
+    class Uniform_Base {
+        class ItemInfo {
+            uniformType = "Neopren";
         };
     };
-}
+};
