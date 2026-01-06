@@ -16,7 +16,7 @@ include = [
 #path = "addons/core/script_version.hpp" # Default
 
 major = 1 # Overrides path when set
-minor = 0
+minor = 1
 patch = 4
 build = 3 # Optional
 
